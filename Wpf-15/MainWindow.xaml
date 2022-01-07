@@ -1,0 +1,471 @@
+﻿<Window x:Class="Wpf_15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <FlowDocumentReader x:Name="fdr">
+            <FlowDocument>
+                <Paragraph TextAlignment="Center" FontWeight="Bold" FontSize="20" FontStyle="Oblique">
+                    Короткие и довольно
+                    <Hyperlink NavigateUri="https://vk.com/@sdelyall-korotkie-i-dovolno-lubopytnye-fakty-kotorye-pozvolyat-vam-u">
+                        любопытные факты,
+                    </Hyperlink>
+                    которые позволят вам узнать немного нового обо всем на свете
+                </Paragraph>
+                <Section FontSize="10" FontStyle="Oblique" Foreground="Blue">
+                    <List MarkerStyle="Box">
+                        <ListItem>
+
+                            <Paragraph >
+                                1. Интересный факт о путешествиях
+                            </Paragraph>
+
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                2. Интересный факт о крысах и жирафах
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                3. Интересный факт о сахарной вате
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                4. Интересный факт о щенках
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                5. Интересный факт о Марокко
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                6. Интересный факт о просмотре фотографий
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                7. Интересный факт о компания Google
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                8. Интересный факт о еноте-полоскуне
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                9. Интересный факт о занятии незнакомой деятельностью
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                10. Интересный факт о Гамбурге
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                11. Интересный факт о гимне Греции
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                12. Интересный факт о пчелах и осах
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                13. Интересный факт о горячих напитках
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                14. Интересный факт о возникновении помпона
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                15. Интересный факт о профессоре-физике
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                16. Интересный факт об изобретении бронижилета
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                </Section>
+                <Section FontSize="14" FontStyle="Oblique">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="0.1*"/>
+                            <TableColumn Width="0.5*"/>
+                            <TableColumn Width="0.4*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold" TextAlignment="Center">
+                                        1
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2">
+                                        <Run  Foreground="Red" FontWeight="Bold" FontSize="16">Путешествовать</Run> полезно для умственного здоровья, а также это снижает риск сердечного приступа и депрессии.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/1.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph FontWeight="Bold" TextAlignment="Center">
+                                        2
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Крысы</Run> и жирафы могут обходиться без воды дольше, чем верблюд.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/2.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph FontWeight="Bold"  TextAlignment="Center">
+                                        3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Сахарная вата</Run> была изобретена стоматологом.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/3.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        4
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Во время игры</Run> со щенком-самкой щенок-самец часто дает выиграть своей сопернице, даже если он имеет физическое преимущество.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/4.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        5
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph  Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Марокко —</Run> единственная в мире страна, где козы из-за нехватки травы взбираются на деревья и пасутся там целыми стадами, лакомясь плодами аргании, дерева из орехов которого изготавливают душистое масло.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/5.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        6
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph  Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Просмотр фотографий</Run> и видео с котами в интернете снижает уровень раздражения, печали и чувства вины больше, чем просмотр фотографий с собаками и другими животными.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/6.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        7
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Компания Google</Run> зарабатывает примерно 700 долларов в секунду.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/7.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        8
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph  Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Енот-полоскун</Run> так назван потому, что перед тем, как что-либо съесть, зверёк моет пищу. Если же поблизости нет воды, а есть хочется, то енот ограничивается тем, что делает несколько «моющих» движений.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/8.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        9
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Занятие незнакомой</Run> деятельностью — лучший способ развития мозга. Общение с теми, кто превосходит вас по интеллекту, также является сильнодействующим средством развития мозга.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/9.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        10
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">В Гамбурге</Run> есть детский сад для мужчин.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/10.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        11
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Национальный гимн</Run> Греции имеет 158 куплетов.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/11.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        12
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph  Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Пчёл и ос можно</Run> научить искать взрывчатые вещества и наркотики, как собак.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/12.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        13
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2" >
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Человеку, который</Run> держит в руках чашку с горячим напитком, окружающие тоже кажутся «теплее» — более дружелюбными и щедрыми.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/13.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        14
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph  Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Мало кто знает</Run> историю возникновения помпона на шапке. Однако, он был придуман не просто так, а для того, чтобы защищать головы французским матросам. Все дело в том, что раньше при строении кораблей мало кого беспокоил комфорт, и потолки в помещениях корабля были очень низкие. И вот именно помпон предохранял голову матроса от случайного удара головой о потолок. Прошло еще немало времени с тех пор, да и потолки сейчас делают гораздо выше, однако до наших дней шапочки французских моряков украшают красные помпоны.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/14.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        15
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph  Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Однажды профессору-физику</Run> Джеку Хезерингтону сообщили, что он не может быть указан единственным автором своей научной работы, так как в ней употребляются слова «мы» и «наш». Тогда он решил не переписывать работу, а добавил в соавторы своего кота.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/15.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph  FontWeight="Bold"  TextAlignment="Center">
+                                        16
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph Margin="2">
+                                        <Run Foreground="Red" FontWeight="Bold" FontSize="16">Бронежилеты,</Run> пожарные выходы, автомобильные дворники и лазерные принтеры, изобрели женщины
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Floater HorizontalAlignment="Center">
+                                            <BlockUIContainer>
+                                                <Image Source="Data/16.jpg"/>
+                                            </BlockUIContainer>
+                                        </Floater>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+                <BlockUIContainer>
+
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
